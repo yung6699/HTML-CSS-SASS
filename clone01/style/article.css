@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 콘텐츠 영역 */
+.compact {
+  position: relative;
+  height: 450px;
+
+  /* linear-gradient를 활용하면 따로 투명이미지를 만들 필요가 없다. */
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/balloon.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.compact .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.compact h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15vw;
+  /* 화면의 너비에 따라 크기가 변한다. */
+  letter-spacing: 10px;
+  padding-left: 10px;
+}
+
+.compact p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+
+/* 최소 768px 이상에서만 적용된다. */
+
+@media (min-height:768px) {
+  .compact h1 {
+    font-size: 115px;
+  }
+  .compact p {
+    font-size: 24px;
+  }
+}
+
+
+
+.article-list .container {
+  max-width: 970px;
+  margin: 20px auto;
+}
+
+.article-list a {
+  display: block;
+  border: 1px solid #ddd;
+  color: inherit;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.article-list a:hover {
+  opacity: 0.7;
+}
+
+.article-list .photo {
+  min-height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-list .text {
+  padding: 10px 20px;
+}
+
+.article-list .text h2 {
+  font-size: 18px;
+}
+
+.article-list .text p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+@media (min-width: 768px) {
+  .article-list article {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 33%;
+  }
+}

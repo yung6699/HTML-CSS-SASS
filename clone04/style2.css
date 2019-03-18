@@ -1,0 +1,73 @@
+.summary {
+  margin-bottom: 20px;
+}
+
+.summary h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  padding: 0 10px;
+
+}
+
+.summary p {
+  margin: 10px 15px;
+}
+
+.summary img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  vertical-align: bottom;
+  height: auto;
+  border: none;
+}
+
+.summary a {
+  display: block;
+  border: solid 1px #dddddd;
+  color: #000000;
+}
+
+.summary a:hover {
+  box-shadow: 0 0 10px #dddddd;
+}
+
+.more {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #3077be;
+  color: #fff;
+}
+
+.more i {
+  margin-left: 10px;
+}
+
+.boxA {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px){
+  .boxA-1:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .boxA-1 .summary {
+    float: left;
+    width: 50%;
+  }
+
+  .boxA-1 .summary:nth-child(odd){
+    padding-right: 10px;
+    box-sizing: border-box;
+    clear: both;
+  }
+
+  .boxA-1 .summary:nth-child(even){
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+}

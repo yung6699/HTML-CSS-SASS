@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*
+ 콘텐츠 contents.html css 
+  모바일, PC 둘다 적용
+ */
+
+.post .container {
+  max-width: 800px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 30px 10px;
+}
+
+.post .container h1 {
+  padding-left: 0.5rem;
+  border-left: 0.75rem solid #bf6a7a;
+  font-size: 2rem;
+}
+
+.post .container p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.post .container img {
+  max-width: 100%;
+}
+
+/* 모바일 */
+@media (max-width: 767px){
+  .post .container {
+    padding: 30px 20px;
+  }
+}
+
+.post .bread ol {
+  /* margin: 0; */
+  padding: 0;
+  list-style: none;
+}
+
+.post .bread ol li {
+  display: inline-block;
+}
+
+.post .bread a {
+  display: block;
+  padding: 5px;
+  color: inherit;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+
+.post .bread a::after {
+  margin-left: 10px;
+  content: '\f054';
+  font-family: 'FontAwesome';
+  opacity: 0.5;
+}
+
+.post .bread a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------------------ */

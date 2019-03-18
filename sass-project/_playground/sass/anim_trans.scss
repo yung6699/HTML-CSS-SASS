@@ -1,0 +1,44 @@
+.btn {
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 5s;
+    -webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+
+    &:hover {
+        font-size: 50px;
+        text-decoration: underline;
+        opacity: .2;
+    }
+}
+
+// animation 
+@keyframes animl {
+    0% {
+        opacity: .2;
+        transform: translate(100px, -30px);
+        -webkit-transform: translate(100px, -30px);
+        -moz-transform: translate(100px, -30px);
+        -ms-transform: translate(100px, -30px);
+        -o-transform: translate(100px, -30px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
+#box1 {
+    animation-name: animl;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; // animation 마지막 상태로 유지하기
+    // animation-fill-mode: backwards; // animation 처음 상태에서 시작
+    animation-iteration-count: 1;
+    // animation-delay: 3s;
+}

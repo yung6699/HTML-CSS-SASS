@@ -1,0 +1,215 @@
+<!-- 웹 페이지를 최신 HTML(HTML5.1)로 작성하겠다는 선언 -->
+<!DOCTYPE html>
+
+<!-- HTML 설정 전체를 마크업, 루트 요소라 불림-->
+<html lang="ko">
+
+<!-- 브라우저 화면에 출력되지 않는 설정들을 작성 -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <!-- 스마트폰, 태블릿과 같은 모바일 장치 전용 설정 모바일 장치의 화면 크기에 따라 페이지를 출력하려면 반드시 사용해야 하는 설정 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="top-btn top-btn-off">
+    <span class="fa fa-chevron-up"></span>
+  </div>
+  
+  <header>
+    <div class="container">
+      <div class="container-small">
+        <a href="index.html" class="home-btn">HOME</a>
+        <button type="button" class="menu-btn">
+          <span class="fa fa-bars" title="MENU"></span>
+        </button>
+      </div>
+
+      <nav class="nav-list">
+        <ul>
+          <li><a href="article.html">TOP</a></li>
+          <li><a href="contents.html">콘텐츠</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="contact.html">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-img">
+    <div class="container">
+      <img src="img/logo.svg" alt="">
+      <h1>LOGGER</h1>
+      <p>맛있고 즐거운 라이프로그</p>
+      <a href="contents.html">라이프로그 시작하기</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+
+      <div class="text">
+        <span class="fa fa-bar-chart icon"></span>
+        <h2>라이프로그란?</h2>
+        <p>일상의 이런저런 것들을 기록하다 보면 보이지 않던 소중한 것들이 보입니다.</p>
+        <a href="about.html">MORE</a>
+        <span class="fa fa-chevron-right"></span>
+      </div>
+
+      <div class="text">
+        <span class="fa fa-gears icon"></span>
+        <h2>스마트폰이 있다면</h2>
+        <p>스마트폰이 있다면 언제라도 라이프로그를 시작할 수 있습니다.</p>
+        <a href="#">MORE</a>
+        <span class="fa fa-chevron-right"></span>
+      </div>
+
+      <div class="text">
+        <span class="fa fa-rocket icon"></span>
+        <h2>SNS와 연동</h2>
+        <p>Twitter와 Facebook 등의 SNS와 연동해서 로그를 간단하게 공유할 수 있습니다.</p>
+        <a href="#">MORE</a>
+        <span class="fa fa-chevron-right"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="service-01">
+    <div class="container">
+      <div class="photo"></div>
+      <div class="text">
+        <h2>귀찮은 설정과 데이터 관리를 하지 않아도 됩니다.</h2>
+        <p>라이프로그에서는 귀찮은 설정과 데이터 관리를 따로 하지 않아도 됩니다. 다른 애플리케이션과의 연동도 버튼 하나만 누르면 됩니다.</p>
+        <a href="#">자세한 설정 방법 살펴보기</a>
+        <span class="fa fa-chevron-right"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-02">
+    <div class="container">
+      <div class="photo"></div>
+      <div class="text">
+        <h2>라이프로그와 함께하는 재미있는 일상 생활</h2>
+        <p>
+          그때그때 일상을 기록하는 라이프로그, 나중에 과거의 일상을 보면 그때는 알지 못했던 다양한 즐거움이 보일 것입니다.
+        </p>
+        <a href="#">라이프로그 살펴보기</a>
+        <span class="fa fa-chevron-right"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+
+      <div class="address">
+        <h2>LOGGER</h2>
+        <p>
+          주소: IT 전문서시 위키구 북스동</br>
+          <a href="http://logger.net/">http://logger.net/</a>
+        </p>
+
+        <nav class="sns">
+          <ul>
+            <li><a href="#"><span class="fa fa-twitter" title="Twitter"></span></a></li>
+            <li><a href="#"><span class="fa fa-facebook" title="Facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-google-plus" title="Google Plus"></span></a></li>
+            <li><a href="#"><span class="fa fa-instagram" title="Instagram"></span></a></li>
+            <li><a href="#"><span class="fa fa-youtube" title="YouTube"></span></a></li>
+          </ul>
+        </nav>
+
+      </div>
+    
+      <nav class="foot-menu">
+        <div>
+          <h3>ABOUT</h3>
+          <ul>
+            <li><a href="#">설립</a></li>
+            <li><a href="#">주소</a></li>
+            <li><a href="#">지도</a></li>
+            <li><a href="#">스태프</a></li>          
+          </ul>
+        </div>
+
+        <div>
+            <h3>SUPPORT</h3>
+            <ul>
+              <li><a href="#">다운로드</a></li>
+              <li><a href="#">메뉴얼</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="contact.html">문의</a></li>          
+            </ul>
+        </div>
+
+        <div>
+          <h3>CONTENTS</h3>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">비즈니스</a></li>
+            <li><a href="#">개발자</a></li>
+            <li><a href="#">블로그</a></li>          
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="footer-corp">
+        &copy; LOGGER corp. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function(){
+      var topBtn =  document.querySelector('.top-btn');
+
+      $('.menu-btn').click(function(){
+        $('.nav-list').slideToggle();
+      });
+
+      window.addEventListener('scroll', function(){
+        var el = document.querySelector('header');
+        if(window.scrollY >= 30){
+          el.classList.add('header-fixed');
+          topBtn.classList.remove('top-btn-off');
+        } else {
+          el.classList.remove('header-fixed');
+          topBtn.classList.add('top-btn-off');
+        }
+      });
+
+      
+      topBtn.addEventListener('click', function(e){
+        // window.scrollTo(0,0);
+        // document.body.scrollTop = 0;
+        scrollToTop(200);
+      });
+
+      function scrollToTop(scrollDuration) {
+         var scrollStep = -window.scrollY / (scrollDuration / 15),
+        scrollInterval = setInterval(function(){
+        if ( window.scrollY != 0 ) {
+            window.scrollBy( 0, scrollStep );
+        }
+        else clearInterval(scrollInterval); 
+      },15);
+}
+
+
+    });
+  </script>    
+
+</html>

@@ -1,0 +1,104 @@
+/* Reset */
+body, ul {
+  margin: 0;
+  padding: 0
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #222;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 100px auto;
+}
+
+.clearfix::after {
+  content:' ';
+  display: block;
+  clear: both;
+}
+
+
+.sq {
+  color: white;  
+  background-color: #111;  
+  /* overflow: hidden; */
+  padding: 1rem;
+}
+
+.sq-item {
+  float: left;
+  width: 25%;
+  padding-top: 25%;
+  position: relative;
+}
+
+
+.sq-item-large {
+  width: 50%;
+  padding-top: 50%;
+}
+
+.sq-item-float-right {
+  float: right;
+}
+
+.sq-item-wide {
+  width: 50%;
+}
+
+.sq-item-long {
+  padding-top: 75%;
+}
+
+/* letf, right, top, bottom을 모두 0로 해서 채운다. */
+.sq-item-anchor {
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+  bottom: 0;
+  margin: 1rem;
+  padding: 1rem;
+  overflow:hidden;
+  transition: all .3s;
+  border: 0 solid #fff;
+}
+
+.sq-item-anchor:hover {
+  margin: -1.5rem;
+  z-index: 20;
+  opacity: 1;
+  border: 10px solid #fff;
+}
+
+
+.sq-item-anchor-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.sq-item-anchor-title {
+  position: relative;
+  z-index: 20;
+}
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+<!-- 웹 페이지를 최신 HTML(HTML5.1)로 작성하겠다는 선언 -->
+<!DOCTYPE html>
+
+<!-- HTML 설정 전체를 마크업, 루트 요소라 불림-->
+<html lang="ko">
+
+<!-- 브라우저 화면에 출력되지 않는 설정들을 작성 -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <!-- 스마트폰, 태블릿과 같은 모바일 장치 전용 설정 모바일 장치의 화면 크기에 따라 페이지를 출력하려면 반드시 사용해야 하는 설정 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/about.css">
+</head>
+
+<body class="nohero">
+
+  <header>
+    <div class="container">
+
+      <div class="container-small">
+        <a href="index.html" class="home-btn">HOME</a>
+        <button type="button" class="menu-btn">
+          <span class="fa fa-bars" title="MENU"></span>
+        </button>
+      </div>
+
+      <nav class="nav-list">
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="contents.html">콘텐츠</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="contact.html">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+
+  <article class="post">
+    <div class="container">
+
+        <h1>LOGGER 란?</h1>
+        <p>
+         LOGGER는 라이프로그와 관련된 정보 제공, 애플리케이션 개발
+         사용자 지원 등을 위해 설립된 기업입니다. 라이프로그 서비스는 사용자가
+         일상 생활을 더 열심히 즐길 수 있게 하는 것을 목표로 하고 있습니다.
+        </p>
+
+        <p>
+          최근에는 국외 데이터 센터를 활용해 국내 뿐만 아니라 해외에도 서비스를
+          제공하고 있습니다.
+        </p>
+    </div>
+  </article>
+
+  <div class="history">
+    <div class="container">
+      <div class="photo"></div>
+      <div class="text">
+        <h2>History</h2>
+        <table>
+          <tr>
+            <th>2010년 4월</th>
+            <td>LOGGER 설립</td>
+          </tr>
+          <tr>
+            <th>2012년 6월</th>
+            <td>온라인 매거진 창간</td>
+          </tr>
+          <tr>
+            <th>2014년 12월</th>
+            <td>해외 기업과의 제휴를 통한 온라인 데이터 공유 서비스 시작</td>
+          </tr>
+          <tr>
+            <th>2015년 1월</th>
+            <td>라이크 로그 서비스 시작</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+
+      <div class="address">
+        <h2>LOGGER</h2>
+        <p>
+          주소: IT 전문서시 위키구 북스동</br>
+          <a href="http://logger.net/">http://logger.net/</a>
+        </p>
+
+        <nav class="sns">
+          <ul>
+            <li><a href="#"><span class="fa fa-twitter" title="Twitter"></span></a></li>
+            <li><a href="#"><span class="fa fa-facebook" title="Facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-google-plus" title="Google Plus"></span></a></li>
+            <li><a href="#"><span class="fa fa-instagram" title="Instagram"></span></a></li>
+            <li><a href="#"><span class="fa fa-youtube" title="YouTube"></span></a></li>
+          </ul>
+        </nav>
+
+      </div>
+    
+      <nav class="foot-menu">
+        <div>
+          <h3>ABOUT</h3>
+          <ul>
+            <li><a href="#">설립</a></li>
+            <li><a href="#">주소</a></li>
+            <li><a href="#">지도</a></li>
+            <li><a href="#">스태프</a></li>          
+          </ul>
+        </div>
+
+        <div>
+            <h3>SUPPORT</h3>
+            <ul>
+              <li><a href="#">다운로드</a></li>
+              <li><a href="#">메뉴얼</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">문의</a></li>          
+            </ul>
+        </div>
+
+        <div>
+          <h3>CONTENTS</h3>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">비즈니스</a></li>
+            <li><a href="#">개발자</a></li>
+            <li><a href="#">블로그</a></li>          
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="footer-corp">
+        &copy; LOGGER corp. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function(){
+    
+      $('.menu-btn').click(function(){
+        $('.nav-list').slideToggle();
+      });
+
+      window.addEventListener('scroll', function(){
+        var el = document.querySelector('header');
+        if(window.scrollY >= 30) el.classList.add('header-fixed');
+        else el.classList.remove('header-fixed');
+      });
+
+    });
+  </script>    
+
+
+</html>

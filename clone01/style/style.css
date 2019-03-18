@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+/* 콘텐츠 영역 */
+.hero-img {
+  position: relative;
+  height: 100vh;
+  min-height: 450px;
+
+  /* linear-gradient를 활용하면 따로 투명이미지를 만들 필요가 없다. */
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/fruits.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.top-btn{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  z-index: 100;
+  text-align: center;
+  background-color:#ddd;
+  color: #001122;
+}
+
+.top-btn:hover{
+  background-image: linear-gradient( 
+    rgba(255, 255, 255, 0.8),
+   rgba(255, 255, 255, 0.8)
+   )
+}
+
+.top-btn-off{
+  display: none;
+}
+
+.hero-img .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-img img {
+  width: 20%;
+}
+
+.hero-img h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15vw;
+  /* 화면의 너비에 따라 크기가 변한다. */
+  letter-spacing: 10px;
+  padding-left: 10px;
+}
+
+.hero-img p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.hero-img a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 3px solid currentColor;
+  border-radius: 6px;
+  background-color: #BF6A7A;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.hero-img a:hover {
+  background-image: linear-gradient( 
+    rgba(255, 255, 255, 0.2),
+   rgba(255, 255, 255, 0.2)
+   )
+}
+
+/* 최소 768px 이상에서만 적용된다. */
+
+@media (min-height:768px) {
+  .hero-img h1 {
+    font-size: 115px;
+  }
+  .hero-img p {
+    font-size: 24px;
+  }
+}
+
+/* about 영역  */
+
+.about .container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.about .text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.about p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.about a {
+  color: #5D9AB2;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+.about .icon {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 40px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ddd;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .about .container {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about .text {
+    flex: 1;
+  }
+}
+
+/* service-01 영역  */
+
+.service-01 {
+  background-color: #5d9ab2;
+  color: #fff;
+}
+
+.service-01 .text {
+  padding: 20px;
+}
+
+.service-01 h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service-01 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.service-01 a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 3px solid currentColor;
+  border-radius: 6px;
+  background-color: #BF6A7A;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.service-01 a:hover {
+  background-image: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2))
+}
+
+.service-01 .photo {
+  min-height: 200px;
+  background-image: url('../img/note.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .service-01 .container {
+    display: flex;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service-01 .photo {
+    flex: 3;
+  }
+  .service-01 .text {
+    flex: 2;
+    padding: 50px;
+  }
+}
+
+/* service-02 */
+
+.service-02 .container {
+  padding-top: 2px;
+}
+
+.service-02 .text {
+  padding: 20px;
+}
+
+.service-02 h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service-02 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.service-02 a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  box-shadow: 0 0 0 1px #888;
+  border: 3px solid currentColor;
+  border-radius: 6px;
+  background-color: #bf6a7a;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.service-02 a:hover {
+  background-image: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.service-02 .photo {
+  min-height: 200px;
+  background-image: url("../img/life.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .service-02 .container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .service-02 .photo {
+    flex: 2;
+  }
+  .service-02 .text {
+    flex: 2.1;
+    padding: 50px;
+  }
+}

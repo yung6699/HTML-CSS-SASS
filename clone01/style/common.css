@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+}
+
+/* 
+  헤더와 푸터는 모든 페이지에 다 적용된다.
+*/
+
+/* 헤더 영역  */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  -webkit-transition:background-color 1s;
+  transition:background-color 1s;
+}
+
+
+header .home-btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .nav-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .nav-list a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header .nav-list a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-fixed {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* 메인페이지를 제외하고 헤더색은 기본적으로 검은색 */
+.nohero header {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* 최대 767 까지 즉 모바일 */
+@media (max-width: 767px) {
+  header {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  header .nav-list {
+    display: none;
+    border-top: 1px solid #fff;
+  }
+  
+  header .menu-btn {
+    float: right;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/* 768픽셀 이상 즉 PC 웹 */
+@media (min-width: 768px) {
+  header .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header .container-small {
+    display: inline-block;
+  }
+
+  header .nav-list {
+    float: right;
+    margin: 10px 20px;
+  }
+
+  header .nav-list ul li {
+    display: inline-block;
+  }
+
+  header .menu-btn {
+    display: none;
+  }
+}
+
+
+
+/* footer css */
+
+/* 푸터 */
+
+footer {
+  color: #fff;
+  background-color: #2b5566;
+}
+
+footer .container {
+  padding: 40px 20px;
+}
+
+@media (min-height: 768px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .address {
+    flex: 0 0 40%;
+  }
+  .foot-menu {
+    flex: 0 0 60%;
+  }
+  .footer-corp {
+    flex: 0 0 100%;
+  }
+}
+
+.address {
+  margin-bottom: 30px;
+}
+
+.address h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.2rem;
+}
+
+.address p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.foot-menu div {
+  margin-bottom: 20px;
+}
+
+.foot-menu h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid currentColor;
+  font-size: 14px;
+}
+
+.foot-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foot-menu a {
+  display: block;
+  padding: 5px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.foot-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .foot-menu {
+    display: flex;
+  }
+  .foot-menu div {
+    flex: 1;
+  }
+  .foot-menu div:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+
+.footer-corp {
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sns {
+  margin-top: 30px;
+}
+
+.sns ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sns a {
+  display: block;
+  margin-right: 15px;
+  padding: 0;
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+
+.sns a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
