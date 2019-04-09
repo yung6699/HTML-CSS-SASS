@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.head > .input {
+    width: 300px;
+    height:44px;
+    border: 1px solid #ff2233;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    font-size: 16px;
+
+}
+
+input {
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.test {
+    font-size: 16px;
+    height: 100%;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:-20px;
+    margin-top: 1px;
+}
+
+
+
+.content {
+    width: 100%;
+    height: 70vh;
+    background-color: blue;
+}
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: yellow;
+}

@@ -1,0 +1,61 @@
+.btn {
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 5s;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
+}
+
+.btn:hover {
+  font-size: 50px;
+  text-decoration: underline;
+  opacity: .2;
+}
+
+@-webkit-keyframes animl {
+  0% {
+    opacity: .2;
+    transform: translate(100px, -30px);
+    -webkit-transform: translate(100px, -30px);
+    -moz-transform: translate(100px, -30px);
+    -ms-transform: translate(100px, -30px);
+    -o-transform: translate(100px, -30px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+
+@keyframes animl {
+  0% {
+    opacity: .2;
+    transform: translate(100px, -30px);
+    -webkit-transform: translate(100px, -30px);
+    -moz-transform: translate(100px, -30px);
+    -ms-transform: translate(100px, -30px);
+    -o-transform: translate(100px, -30px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+
+#box1 {
+  -webkit-animation-name: animl;
+          animation-name: animl;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+/*# sourceMappingURL=anim_trans.css.map */
