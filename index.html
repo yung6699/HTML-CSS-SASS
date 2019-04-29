@@ -15,11 +15,12 @@
     <div class="Text">?????????/</div>
     <input type="text" name="" id="myForm">
     <script>
-        window.addEventListener("beforeunload", function (e) {
-            var confirmationMessage = "\o/";
-
-            (e || window.event).returnValue = confirmationMessage; //Gecko + IE
-            return confirmationMessage; //Webkit, Safari, Chrome etc.
+        var isOnIOS = navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPhone/i);
+        var eventName = isOnIOS ? "pagehide" : "beforeunload";
+        console.log(isOnIOS, eventName)
+        window.addEventListener(eventName, function (event) {
+            window.event.cancelBubble = true; // Don't know if this works on iOS but it might!
+            event.returnValue = ''
         });
     </script>
 
