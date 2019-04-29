@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .Text {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <h1>Welcome to my Home Page</h1>
+
+    <p>Close this window or press F5 to reload the page.</p>
+    <p><strong>Note:</strong> Due to different browser settings, this event may not always work as expected.</p>
+    <div class="Text">?????????/</div>
+    <input type="text" name="" id="myForm">
+    <script>
+        window.addEventListener("beforeunload", function (e) {
+            var confirmationMessage = "\o/";
+
+            (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+            return confirmationMessage; //Webkit, Safari, Chrome etc.
+        });
+    </script>
+
+</body>
+
+</html>
